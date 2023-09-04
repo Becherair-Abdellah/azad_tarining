@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonex - Home Studio</title>
+    <!-- fonts "open sans" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<!-- cdn js tailwind css  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
+<!-- scripts  -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
+<!-- font awesome  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<!-- css file  -->
+<link rel="stylesheet" href="/css/index.css">
+<script defer src="/js/index.js"></script>
+<body class="h-full">
+    <!-- // nav on mobile -->
+    <div class="navlink fixed bg-white z-[111] h-full p-6 right-0 w-[90%] " >
+        <div class="top-controles flex justify-between items-center mb-[4rem]">
+            <div class="lang flex justify-between items-center gap-3 text-sm">
+                <span class="hover:text-orange-400 duartion-300">ENG</span>
+                <span class=" hover:text-orange-400 duartion-300">FRA</span>
+                <span class="hover:text-orange-400 duartion-300">GER</span>
+            </div>
+            <div class="close cursor-pointer ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-[40px] h-[40px]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+            </div>
+        </div>
+        <ul id="nested-list mt-8 block">
+            <li class="toggle-icon mt-4">
+                <span class="font-bold text-2xl text-gray-700">Home</span>
+                <ul>
+                   <li>Link1</li>
+                   <li>Link2</li>
+                   <li>Link3</li>
+                   <li>Link4</li>
+                   <li>Link5</li>
+                   <li>Link6</li>
+                   <li>Link7</li>
+                   <li>Link8</li>
+                </ul>
+            </li>
+            <li class="toggle-icon mt-4">
+                <span class="font-bold text-2xl text-gray-700">Portfolio</span>
+                <ul>
+                    <li>Link1</li>
+                    <li>Link2</li>
+                    <li>Link3</li>
+                    <li>Link4</li>
+                    <li>Link5</li>
+                </ul>
+            </li>
+            <li class="toggle-icon mt-4">
+                <span class="font-bold text-2xl text-gray-700">Blog</span>
+                <ul>
+                    <li>Link1</li>
+                    <li>Link2</li>
+                    <li>Link3</li>
+                    <li>Link4</li>
+                    <li>Link5</li>
+                </ul>
+            </li>
+            <li class="toggle-icon mt-4">
+                <span class="font-bold text-2xl text-gray-700" >Pages</span>
+                <ul>
+                    <li>Link1</li>
+                    <li>Link2</li>
+                    <li>Link3</li>
+                    <li>Link4</li>
+                    <li>Link5</li>
+                    <li>Subitem</li>
+                    <li>Subitem </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <img class="fixed g" src="./images/fixed2.jpg" alt="">
+    <!-- navbar  -->
+    <nav id="navbar" class="flex justify-between items-center bg-white z-[-1] relative px-3 py-8 ">
+        <span class="absolute left-0 top-0 custom" ></span>
+            <div>
+                <img src="https://moonex.ibthemespro.com/assets/img/root/logo-dark.png" alt="">
+            </div>
+        
+        <div class="flex justify-between items-center gap-6">
+            <div class="search cursor-pointer">
+                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+            </div>
+            <div class="open flex flex-col cursor-pointer">
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 10H20M4 14H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

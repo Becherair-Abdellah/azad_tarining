@@ -1,0 +1,44 @@
+html{
+ height: 100%;   
+}
+*{
+    transition: all .4s;
+}
+.g{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.custom{
+    height: 10px;
+    background-color: #fa4529;
+    width: 100%;
+}
+/* Define scrollbar width, color, and radius */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track (the area where the scrollbar moves) */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle (the draggable part of the scrollbar) */
+  ::-webkit-scrollbar-thumb {
+    background: #fa4529;
+  }
+.f{
+    position: fixed;
+    width: 100%;
+    transition: .3s;
+}
+#navbar{
+    z-index: 1;
+}
+span.active{
+    color: #fa4529;
+}
