@@ -10,26 +10,35 @@ window.addEventListener("scroll", function() {
 });
 
  // Add click event listener to toggle sublists
- const toggleIcons = document.querySelectorAll('.toggle-icon');
- toggleIcons.forEach(icon => {
-     icon.addEventListener('click', () => {
-         const sublist = icon.querySelector('ul');
-         if (sublist) {
-             sublist.style.display = sublist.style.display === 'none' ? 'block' : 'none';
-         }
-     });
- });
+ const toggleIcons = document.querySelectorAll('.toggle-icond');
+ const toggleEle = document.querySelector('.target');
+ toggleIcons.forEach((item)=>{
+console.log(item)
+// console.log(item.querySelector('.target'));
+    item.addEventListener('click',()=>{
+        // remove proactive div from all divs
+        toggleIcons.forEach((active)=>{
+            active.classList.remove('proactive')
+        })
+        console.log(item.querySelector('.btn'))
+        // // toggleEle.classList.toggle("h-0");
+        item.classList.add('proactive')
+        item.querySelector('.btn').classList.toggle('rotate-90')
+        // // document.querySelector('.btn').style.rotate = '90deg';
+        item.querySelector('.target').classList.toggle(`max-h-[${toggleEle.scrollHeight}px]`)
+     })
+
+ })
  // add click event at close button to close div of links
 
  const toggleClose = document.querySelector(".close");
  toggleClose.onclick = ()=>{
-    document.querySelector('.navlink').classList.toggle('-right-[100%]')
+     document.querySelector('.navlink').classList.remove('move');
+     document.querySelector('.navlink').classList.add('translate-x-[112%]');
  }
  // add toggle open
  const toggleOpen = document.querySelector(".open");
  toggleOpen.onclick = ()=>{
-    console.log('open')
-    document.querySelector('.navlink').classList.remove('-right-[100%]')
-
-    document.querySelector('.navlink').classList.add('right-0')
+    document.querySelector('.navlink').classList.remove('translate-x-[112%]');
+    document.querySelector('.navlink').classList.add('move');
  }

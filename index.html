@@ -38,7 +38,7 @@
 <script defer src="/js/index.js"></script>
 <body class="h-full">
     <!-- // nav on mobile -->
-    <div class="navlink fixed bg-white z-[111] h-full p-6 right-0 w-[90%] " >
+    <div class="navlink fixed bg-white z-[11] h-full p-6 translate-x-[112%] select-none  w-[90%]" >
         <div class="top-controles flex justify-between items-center mb-[4rem]">
             <div class="lang flex justify-between items-center gap-3 text-sm">
                 <span class="hover:text-orange-400 duartion-300">ENG</span>
@@ -49,53 +49,73 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-[40px] h-[40px]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
             </div>
         </div>
-        <ul id="nested-list mt-8 block">
-            <li class="toggle-icon mt-4">
-                <span class="font-bold text-2xl text-gray-700">Home</span>
-                <ul>
-                   <li>Link1</li>
-                   <li>Link2</li>
-                   <li>Link3</li>
-                   <li>Link4</li>
-                   <li>Link5</li>
-                   <li>Link6</li>
-                   <li>Link7</li>
-                   <li>Link8</li>
-                </ul>
-            </li>
-            <li class="toggle-icon mt-4">
-                <span class="font-bold text-2xl text-gray-700">Portfolio</span>
-                <ul>
-                    <li>Link1</li>
-                    <li>Link2</li>
-                    <li>Link3</li>
-                    <li>Link4</li>
-                    <li>Link5</li>
-                </ul>
-            </li>
-            <li class="toggle-icon mt-4">
-                <span class="font-bold text-2xl text-gray-700">Blog</span>
-                <ul>
-                    <li>Link1</li>
-                    <li>Link2</li>
-                    <li>Link3</li>
-                    <li>Link4</li>
-                    <li>Link5</li>
-                </ul>
-            </li>
-            <li class="toggle-icon mt-4">
-                <span class="font-bold text-2xl text-gray-700" >Pages</span>
-                <ul>
-                    <li>Link1</li>
-                    <li>Link2</li>
-                    <li>Link3</li>
-                    <li>Link4</li>
-                    <li>Link5</li>
-                    <li>Subitem</li>
-                    <li>Subitem </li>
-                </ul>
-            </li>
-        </ul>
+        <div class="nav-inside">
+            <ul id="nested-list mt-8 block">
+                <li class="toggle-icond mt-8 ">
+                    <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
+                    <div class="target">
+                        <ul class="p-4">
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
+                         </ul>
+                    </div>
+                </li>
+    
+                <li class="toggle-icond mt-8 ">
+                    <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
+                    <div class="target">
+                        <ul class="p-4">
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
+                         </ul>
+                    </div>
+                </li>
+    
+                <li class="toggle-icond mt-8 ">
+                    <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
+                    <div class="target">
+                        <ul class="p-4">
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
+                         </ul>
+                    </div>
+                </li>
+    
+                <li class="toggle-icond mt-8 ">
+                    <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
+                    <div class="target">
+                        <ul class="p-4">
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
+                            <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
+                         </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     <img class="fixed g" src="./images/fixed2.jpg" alt="">
     <!-- navbar  -->
