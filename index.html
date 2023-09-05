@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moonex - Home Studio</title>
     <!-- fonts "open sans" -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<!-- cdn js tailwind css  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" referrerpolicy="no-referrer" />
-<!-- scripts  -->
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- cdn js tailwind css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        referrerpolicy="no-referrer" />
+    <!-- scripts  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
     <style type="text/tailwindcss">
         @layer utilities {
           .content-auto {
@@ -30,112 +33,155 @@
           }
         }
       </style>
-<!-- font awesome  -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <!-- css file  -->
 <link rel="stylesheet" href="/css/index.css">
 <script defer src="/js/index.js"></script>
+
 <body class="h-full">
     <!-- // nav on mobile -->
-    <div class="navlink fixed bg-white z-[11] h-full p-6 translate-x-[112%] select-none  w-[90%]" >
-        <div class="top-controles flex justify-between items-center mb-[4rem]">
-            <div class="lang flex justify-between items-center gap-3 text-sm">
-                <span class="hover:text-orange-400 duartion-300">ENG</span>
-                <span class=" hover:text-orange-400 duartion-300">FRA</span>
-                <span class="hover:text-orange-400 duartion-300">GER</span>
+    <!-- translate-x-[112%] -->
+    <div class="navlink fixed bg-white z-[11] h-full p-6  select-none  w-[90%]">
+        <div class="flex flex-col justify-between items-start h-full">
+            <div class="top-controles flex justify-between items-center w-full">
+                <div class="lang flex justify-between items-center gap-3 text-sm">
+                    <span class="hover:text-orange-400 duartion-300">ENG</span>
+                    <span class=" hover:text-orange-400 duartion-300">FRA</span>
+                    <span class="hover:text-orange-400 duartion-300">GER</span>
+                </div>
+                <div class="close cursor-pointer ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-[40px] h-[40px]" viewBox="0 0 512 512">
+                        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="32" d="M368 368L144 144M368 144L144 368" />
+                    </svg>
+                </div>
             </div>
-            <div class="close cursor-pointer ">
-                <svg xmlns="http://www.w3.org/2000/svg" class="ionicon w-[40px] h-[40px]" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M368 368L144 144M368 144L144 368"/></svg>
+            <div class="nav-inside w-full overflow-hidden p-4 pl-0 overflow-y-visible flex-1 ">
+                <ul id="nested-list mt-8 block">
+                    <li class="toggle-icond mt-8 ">
+                        <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span
+                                class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
+                        <div class="target">
+                            <ul class="p-4">
+                                <li class="mb-3 text-gray-600 hover:ml-2 hover:text-gray-900">Link1</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2 hover:text-gray-900">Link2</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2 hover:text-gray-900">Link3</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2 hover:text-gray-900">Link4</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2 hover:text-gray-900">Link5</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2 hover:text-gray-900">Link6</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2 hover:text-gray-900">Link7</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2 hover:text-gray-900">Link8</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="toggle-icond mt-8 ">
+                        <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span
+                                class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
+                        <div class="target">
+                            <ul class="p-4">
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="toggle-icond mt-8 ">
+                        <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span
+                                class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
+                        <div class="target">
+                            <ul class="p-4">
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="toggle-icond mt-8 ">
+                        <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span
+                                class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
+                        <div class="target">
+                            <ul class="p-4">
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
+                                <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="nav-inside">
-            <ul id="nested-list mt-8 block">
-                <li class="toggle-icond mt-8 ">
-                    <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
-                    <div class="target">
-                        <ul class="p-4">
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
-                         </ul>
-                    </div>
-                </li>
-    
-                <li class="toggle-icond mt-8 ">
-                    <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
-                    <div class="target">
-                        <ul class="p-4">
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
-                         </ul>
-                    </div>
-                </li>
-    
-                <li class="toggle-icond mt-8 ">
-                    <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
-                    <div class="target">
-                        <ul class="p-4">
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
-                         </ul>
-                    </div>
-                </li>
-    
-                <li class="toggle-icond mt-8 ">
-                    <div class="font-bold text-2xl flex justify-between items-center cursor-pointer">Home <span class="text-lg text-gray-800 btn"><i class="fa-solid fa-chevron-right"></i></span></div>
-                    <div class="target">
-                        <ul class="p-4">
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link1</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link2</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link3</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link4</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link5</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link6</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link7</li>
-                            <li class="mb-3 text-gray-600 hover:ml-2">Link8</li>
-                         </ul>
-                    </div>
-                </li>
-            </ul>
+            <div class="nav-footer w-full">
+                <div class="text-gray-600 text-[13px]">@2023 <span class="text-gray-900">Moonex</span>. All Rights
+                    Reserved.
+                    <br>
+                    Development by <span class="text-gray-900">ib-themes.</span>
+                </div>
+                <!-- social media -->
+                <div class="text-gray-600 text-[13px] flex gap-4 items-center">
+
+                    <a href="https://twitter.com" class="t hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] p-1 px-2 flex justify-between items-center">
+                        <i class="fa-brands fa-twitter text-sm"></i>
+                    </a>
+
+                    <a href="https://facebook.com" class="t hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] px-[12px] py-[5px] flex justify-between items-center hover:bg-[#3b5998]">
+                        <i class="fa-brands fa-facebook-f text-sm"></i>
+                    </a>
+
+                    <a href="https://twitter.com" class="t hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] p-[10px] px-[12px] flex justify-between items-center i">
+                        <i class="fa-brands fa-instagram text-[18px]"></i>
+                    </a>
+
+                    <a href="https://twitter.com" class="t hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] p-[6px] px-[12px] flex justify-between items-center hover:bg-[#fa4529]">
+                        <i class="fa-brands fa-pinterest-p text-sm"></i>
+                    </a>
+
+                </div>
+            </div>
+
         </div>
     </div>
     <img class="fixed g" src="./images/fixed2.jpg" alt="">
     <!-- navbar  -->
     <nav id="navbar" class="flex justify-between items-center bg-white z-[-1] relative px-3 py-8 ">
-        <span class="absolute left-0 top-0 custom" ></span>
-            <div>
-                <img src="https://moonex.ibthemespro.com/assets/img/root/logo-dark.png" alt="">
-            </div>
-        
+        <span class="absolute left-0 top-0 custom"></span>
+        <div>
+            <img src="https://moonex.ibthemespro.com/assets/img/root/logo-dark.png" alt="">
+        </div>
+
         <div class="flex justify-between items-center gap-6">
             <div class="search cursor-pointer">
                 <i class="fa-solid fa-magnifying-glass text-xl"></i>
             </div>
             <div class="open flex flex-col cursor-pointer">
                 <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 10H20M4 14H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 10H20M4 14H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
             </div>
         </div>
     </nav>
 </body>
+
 </html>
