@@ -44,8 +44,8 @@
 
 <body class="h-full">
     <!-- // nav on mobile -->
-    <!-- translate-x-[112%] -->
-    <div class="navlink fixed bg-white z-[11] h-full p-6  select-none  w-[90%]">
+    <!--  -->
+    <div class="navlink fixed bg-white w-full z-[11] h-full p-6 select-none right-0 translate-x-[112%] sm:w-[430px] xl:w-[500px] xl:p-[3rem] shadow">
         <div class="flex flex-col justify-between items-start h-full">
             <div class="top-controles flex justify-between items-center w-full">
                 <div class="lang flex justify-between items-center gap-3 text-sm">
@@ -138,50 +138,157 @@
                     Development by <span class="text-gray-900">ib-themes.</span>
                 </div>
                 <!-- social media -->
-                <div class="text-gray-600 text-[13px] flex gap-4 items-center">
+                <div class="text-gray-600 text-[13px] flex gap-4 items-center mt-5">
 
-                    <a href="https://twitter.com" class="t hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] p-1 px-2 flex justify-between items-center">
+                    <a href="https://twitter.com" class="t w-[35px] h-[35px] hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] flex justify-center items-center">
                         <i class="fa-brands fa-twitter text-sm"></i>
                     </a>
-
-                    <a href="https://facebook.com" class="t hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] px-[12px] py-[5px] flex justify-between items-center hover:bg-[#3b5998]">
+                    <a href="https://facebook.com" class="w-[35px] h-[35px]  hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] flex justify-center items-center hover:bg-blue-500">
                         <i class="fa-brands fa-facebook-f text-sm"></i>
                     </a>
-
-                    <a href="https://twitter.com" class="t hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] p-[10px] px-[12px] flex justify-between items-center i">
-                        <i class="fa-brands fa-instagram text-[18px]"></i>
+                    <a href="https://instegram.com" class="i w-[35px] h-[35px] hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] flex justify-center items-center">
+                        <i class="fa-brands fa-instagram text-[18px] "></i>
                     </a>
 
-                    <a href="https://twitter.com" class="t hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] p-[6px] px-[12px] flex justify-between items-center hover:bg-[#fa4529]">
+                    <a href="https://pinterest.com" class="hover:bg-orange-500 w-[35px] h-[35px] hover:text-white hover:translate-y-[-2px] block rounded-full border-gray-200 border-[1px] flex justify-center items-center">
                         <i class="fa-brands fa-pinterest-p text-sm"></i>
                     </a>
-
+                    
                 </div>
             </div>
 
         </div>
     </div>
+
+
     <img class="fixed g" src="./images/fixed2.jpg" alt="">
     <!-- navbar  -->
-    <nav id="navbar" class="flex justify-between items-center bg-white z-[-1] relative px-3 py-8 ">
+    <div class=" bg-white relative">
         <span class="absolute left-0 top-0 custom"></span>
-        <div>
-            <img src="https://moonex.ibthemespro.com/assets/img/root/logo-dark.png" alt="">
-        </div>
+        <nav id="navbar" class="xl:w-[85%] m-auto flex justify-between items-center  z-[-1]  px-3 py-8 ">
+    
+            <div>
+                <img src="https://moonex.ibthemespro.com/assets/img/root/logo-dark.png" alt="">
+            </div>
+    
+            <div class="flex-1 mr-[5rem] hidden lg:flex justify-end items-center gap-[1rem]">
+                <ul class="ul-li flex justify-end items-center gap-[1rem] text-[16px] font-bold uppercase relative">
 
-        <div class="flex justify-between items-center gap-6">
-            <div class="search cursor-pointer">
-                <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    
+                    <li class="hover:text-[#fa4529] p-[1rem] text-center dropdown relative cursor-pointer">
+                        Home
+                        <br>
+                        <span class="text-5xl w-[5px] h-[5px] block mx-auto mt-2 rounded"></span>
+                        <div class="dropdown-content overflow-hidden bg-red-500 absolute h-0 w-[440px] left-0 shadow bg-white rounded mt-[2rem] ">
+
+                          <div class="py-10 flex justify-evenly  items-center lowercase font-normal ">
+                            <div class="flex flex-col flex-1 gap-6 ">
+                                <a href="#" class="hover:text-orange-600">Home Default</a>
+                                <a href="#" class="hover:text-orange-600">Home Studio</a>
+                                <a href="#" class="hover:text-orange-600">Home Agency</a>
+                                <a href="#" class="hover:text-orange-600">Home Minimal</a>
+                            </div>
+
+                            <div class="flex flex-col flex-1 gap-6">
+                                <a href="#">Home Dark</a>
+                                <a href="#">Home Freelancer</a>
+                                <a href="#">Home Trending</a>
+                                <a href="#">Home Modern</a>
+                            </div>
+                          </div>
+
+
+                        </div>
+                    </li> 
+
+                    <li class="hover:text-[#fa4529] p-[1rem] text-center dropdown relative cursor-pointer">
+                        PORTFOLIO
+                        <br>
+                        <span class="text-5xl w-[5px] h-[5px] block mx-auto mt-2 rounded"></span>
+                        <div class="dropdown-content overflow-hidden bg-red-500 absolute h-0 left-0 shadow bg-white rounded mt-[2rem] w-[350px] ">
+
+                          <div class=" flex justify-evenly py-[2rem] px-[1rem] items-center lowercase font-normal ">
+                            <div class="flex flex-col flex-1 gap-6 items-start  ">
+                                <a href="#" class="hover:text-orange-600 px-6">Works Grid</a>
+                                <a href="#" class="hover:text-orange-600 px-6">Works Masonry</a>
+                                <a href="#" class="hover:text-orange-600 px-6">Works Listing</a>
+                                <a href="#" class="hover:text-orange-600 px-6">Works Carousel</a>
+                                <a href="#" class="hover:text-orange-600 px-6">Works Showcase</a>
+                            </div>
+                          </div>
+
+
+                        </div>
+                    </li>
+
+                    <li class="hover:text-[#fa4529] p-[1rem] text-center dropdown relative cursor-pointer">
+                        BOLG
+                        <br>
+                        <span class="text-5xl w-[5px] h-[5px] block mx-auto mt-2 rounded"></span>
+                        <div class="dropdown-content overflow-hidden bg-red-500 absolute h-0 -left-[1rem] shadow bg-white rounded mt-[2rem] w-[350px] ">
+
+                          <div class=" flex justify-evenly py-[2rem] px-[1rem] items-center lowercase font-normal ">
+                            <div class="flex flex-col flex-1 gap-5 items-start  ">
+                                <a href="#" class="hover:text-orange-600 px-6">Blog Grid</a>
+                                <a href="#" class="hover:text-orange-600 px-6">Blog Masonry</a>
+                                <a href="#" class="hover:text-orange-600 px-6">Blog Sidebar</a>
+                                <a href="#" class="hover:text-orange-600 px-6">Blog Details</a>
+                                <a href="#" class="hover:text-orange-600 px-6">Blog Details Sidebar</a>
+                            </div>
+                          </div>
+
+
+                        </div>
+                    </li>
+
+                    <li class="hover:text-[#fa4529] p-[1rem] text-center dropdown cursor-pointer">
+                        Pages
+                        <br>
+                        <span class="text-5xl w-[5px] h-[5px] block mx-auto mt-2 rounded"></span>
+                        <div class="dropdown-content overflow-hidden bg-red-500 absolute h-0 w-[440px] left-0 shadow bg-white rounded mt-[2rem] ">
+
+                          <div class="py-10 flex justify-evenly  items-center lowercase font-normal ">
+                            <div class="flex flex-col flex-1 gap-6 items-start ">
+                                <a href="#" class="hover:text-orange-600">About Us</a>
+                                <a href="#" class="hover:text-orange-600">About Me</a>
+                                <a href="#" class="hover:text-orange-600">Services</a>
+                                <a href="#" class="hover:text-orange-600">Service Details</a>
+                                <a href="#" class="hover:text-orange-600">Pricing</a>
+                            </div>
+
+                            <div class="flex flex-col flex-1 gap-6 items-start">
+                                <a href="#">Team</a>
+                                <a href="#">FAQ</a>
+                                <a href="#">Contact</a>
+                                <a href="#">Page 404</a>
+                                <a href="#">Comming Soon</a>
+                            </div>
+                          </div>
+
+
+                        </div>
+                    </li>
+
+
+                </ul>
             </div>
-            <div class="open flex flex-col cursor-pointer">
-                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 10H20M4 14H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
+
+            <div class="flex justify-between items-center gap-6">
+                <div class="search cursor-pointer">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </div>
+                <div class="open flex flex-col cursor-pointer">
+                    <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 10H20M4 14H20" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
             </div>
-        </div>
-    </nav>
+    
+    
+        </nav>
+    </div>
 </body>
 
 </html>
