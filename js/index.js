@@ -45,15 +45,17 @@ console.log(item)
     // document.querySelector('.navlink').classList.add('move');
  }
  // making dropdown 
- // JavaScript (Optional)
-// // document.querySelectorAll('.dropdown').forEach((dropdown) => {
-//     dropdown.addEventListener('mouseenter', () => {
-//         // dropdown.querySelector('.dropdown-content').style.display = 'block';
-//         dropdown.querySelector('.dropdown-content').style.height = `${dropdown.querySelector('.dropdown-content').scrollHeight}px`; 
-//     });
+//  JavaScript (Optional)
+document.querySelectorAll('.dropdown').forEach((dropdown) => {
+    dropdown.addEventListener('mouseenter', () => {
+        // dropdown.querySelector('.dropdown-content').style.display = 'block';
+        dropdown.querySelector('.dropdown-content').style.height = `${dropdown.querySelector('.dropdown-content').scrollHeight}px`; 
+        // dropdown.querySelector('.dropdown-content').style.height = `${dropdown.querySelector('.dropdown-content').scrollHeight}px`; 
+        console.log(dropdown.querySelector('.dropdown-content').scrollHeight);
+    });
 
-//     dropdown.addEventListener('mouseleave', () => {
-//         dropdown.querySelector('.dropdown-content').style.height = `0px`; 
+    dropdown.addEventListener('mouseleave', () => {
+        dropdown.querySelector('.dropdown-content').style.height = `0px`; 
 
-//     });
-// // });
+    });
+});

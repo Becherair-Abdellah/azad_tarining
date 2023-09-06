@@ -71,6 +71,5 @@ span.active{
 .dropdown-content{
 }
 .ul-li li:hover .dropdown-content{
-    height:264px;
     color: black;
 }
