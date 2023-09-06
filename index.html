@@ -13,7 +13,7 @@
     <!-- cdn js tailwind css  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
         referrerpolicy="no-referrer" />
-    <!-- scripts  -->
+    <!-- scripts from tailwind css freamwork -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -26,6 +26,7 @@
             }
         }
     </script>
+    <!-- tailwind plugins  -->
     <style type="text/tailwindcss">
         @layer utilities {
           .content-auto {
@@ -42,9 +43,12 @@
 <link rel="stylesheet" href="/css/index.css">
 <script defer src="/js/index.js"></script>
 
+
+<!-- start work  -->
 <body class="h-full">
-    <!-- // nav on mobile -->
-    <!--  -->
+
+    <!-- menu bar on mobile start  -->
+    
     <div class="navlink fixed bg-white w-full z-[11] h-full p-6 select-none right-0 translate-x-[112%] sm:w-[430px] xl:w-[500px] xl:p-[3rem] shadow">
         <div class="flex flex-col justify-between items-start h-full">
             <div class="top-controles flex justify-between items-center w-full">
@@ -159,18 +163,28 @@
 
         </div>
     </div>
+    <!-- menu bar on mobile end  -->
 
-
+    <!-- fixed picture to put it under content start -->
     <img class="fixed g" src="./images/fixed2.jpg" alt="">
+
+    <!-- fixed picture to put it under content start -->
+
     <!-- navbar  -->
     <div class=" bg-white relative">
+        <!-- line orange start  -->
         <span class="absolute left-0 top-0 custom"></span>
+        <!-- line orange start  -->
+
         <nav id="navbar" class="xl:w-[85%] m-auto flex justify-between items-center  z-[-1]  px-3 py-8 ">
     
+            <!-- logo start -->
             <div>
                 <img src="https://moonex.ibthemespro.com/assets/img/root/logo-dark.png" alt="">
             </div>
+            <!-- logo start -->
     
+            <!-- links in large screen start -->
             <div class="flex-1 mr-[5rem] hidden lg:flex justify-end items-center gap-[1rem]">
                 <ul class="ul-li flex justify-end items-center gap-[1rem] text-[16px] font-bold uppercase relative">
 
@@ -272,7 +286,9 @@
 
                 </ul>
             </div>
+            <!-- links in large screen end -->
 
+            <!-- search and open menu buttons start -->
             <div class="flex justify-between items-center gap-6">
                 <div class="search cursor-pointer">
                     <i class="fa-solid fa-magnifying-glass text-xl"></i>
@@ -285,6 +301,7 @@
                     </svg>
                 </div>
             </div>
+            <!-- search and open menu buttons end -->
     
     
         </nav>
