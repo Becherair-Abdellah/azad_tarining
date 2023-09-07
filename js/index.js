@@ -66,10 +66,6 @@ const search = ()=>{
     input.name = 'search';
     input.placeholder = 'Type and hit Enter to search'
     div.appendChild(input);
-    const btnIcon = document.createElement('div');
-    // const closeIcon = `<i class="fa-solid fa-chevron-right"></i>`
-    // const searchIcon = `<i class="fa-solid fa-magnifying-glass text-xl"></i>`;
-    // btnIcon.appendChild(closeIcon);
     // opening search bar
     document.querySelector('.search').onclick = ()=>{
       if(!document.querySelector(".search").classList.contains('close')){

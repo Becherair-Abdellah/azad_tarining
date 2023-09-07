@@ -68,8 +68,26 @@ span.active{
 /* .max-h{
     height: auto imo !important;
 } */
-.dropdown-content{
-}
 .ul-li li:hover .dropdown-content{
     color: black;
+}
+.gr-t{
+    grid-template-columns: repeat(3,33%);
+}
+@media (min-width:525px) {
+    .gr-t{
+        grid-template-columns: repeat(3,27%);
+    }
+}
+@media (min-width:768px) {
+    .gr-t{
+        grid-template-columns: repeat(3,20%);
+    }
+}
+.bg-ti{
+    background: url("../images/10013.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    object-fit: cover;
+
 }
