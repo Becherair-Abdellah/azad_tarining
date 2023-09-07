@@ -91,3 +91,21 @@ span.active{
     object-fit: cover;
 
 }
+.bg1{
+    width: 100%;
+}
+.custom-h:hover img{
+    scale: 1.1;
+    transition: 1s;
+}
+.custom-h:hover a{
+    opacity: 1;
+}
+@media (min-width:768px){
+    .gr-t2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2.4rem;
+        column-gap: 5rem;
+    }
+}

@@ -1,15 +1,15 @@
 
 
 // navbar coniguration
-window.addEventListener("scroll", function() {
-    const navbar = document.getElementById("navbar");
-    if (window.scrollY > 100) { // Change 200 to the scroll distance you prefer
-        navbar.classList.add("f");
-    } else {
-        navbar.classList.remove("f");
-    }
+// window.addEventListener("scroll", function() {
+//     const navbar = document.getElementById("navbar");
+//     if (window.scrollY > 100) { // Change 200 to the scroll distance you prefer
+//         navbar.classList.add("f");
+//     } else {
+//         navbar.classList.remove("f");
+//     }
     
-});
+// });
 
  // Add click event listener to toggle sublists
  const toggleIcons = document.querySelectorAll('.toggle-icond');
