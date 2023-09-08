@@ -109,3 +109,40 @@ span.active{
         column-gap: 5rem;
     }
 }
+.bo-rd{
+    border-bottom: 2px solid black;
+}
+.bg-lt{
+    background: url("../images/10014.png");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    object-fit: cover;
+}
+.over{
+    position: relative;
+}
+.over::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.279);
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* z-index: 1; */
+}
+/* .gr-d{
+    display: grid;
+    grid-template-columns: repeat();
+} */
+@media (min-width:992px){
+    .gr-d{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .custom-h:hover .c{
+        bottom: 0%;
+        transition: .3s;
+    }
+}
