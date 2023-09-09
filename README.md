@@ -16,22 +16,30 @@ This repository contains the codebase for a training project completed during my
     Documentation: Includes documentation on how to set up and run the project locally.
     Demo: Provides a live demo of the project hosted here.
 
+## pages
+![pages](svgs/i2.png)
+![pages](svgs/i3.png)
+![pages](svgs/i4.png)
+![pages](svgs/i5.png)
+![pages](svgs/i6.png)
+![pages](svgs/i7.png)
+![pages](svgs/i8.png)
+![pages](svgs/i9.png)
+![pages](svgs/i1.png)
 # Project Overview:
 
 During my internship at Azad Company, I worked on this project to strengthen my web development skills. The project simulates a one-page website for Azad Company and serves as a hands-on training exercise in HTML, CSS, and JavaScript. It incorporates responsive design, image optimization, and interactive features, showcasing my ability to create a functional and user-friendly web application.
 
 # Usage:
 
-To run the project locally, follow the instructions in the documentation provided in this repository. You can also access a live demo of the project here.
-
-# Contributions:
-
-Contributions and feedback are welcome! If you have any suggestions or improvements, please feel free to open an issue or submit a pull request.
-
-# License:
-
-This project is open-source and available under the MIT License.
+## To run the project locally, follow the instructions in the documentation provided in this repository. You can also access a live demo of the project here :
+1/ fork this project
+2/ clone this project
+3/ open this project in VS code editor or any editor
+4/ open HTML file 
+5/ click at alt+l+o to run server localhost
+6/ let's get started
 
 # Contact:
 
-For inquiries or collaboration opportunities, you can reach me at your-email@example.com.
+For inquiries or collaboration opportunities, you can reach me at abdellah.becherair04@gmail.com .
