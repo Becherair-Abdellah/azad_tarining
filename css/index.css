@@ -161,5 +161,5 @@ span.active{
     color: #fa4529;
 }
 .move{
-    display: red;
+    opacity: 1 !important;
 }
