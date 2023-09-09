@@ -17,6 +17,10 @@ html{
     background-color: #fa4529;
     width: 100%;
 }
+::selection{
+    background: #fa4529;
+    color: white;
+}
 /* Define scrollbar width, color, and radius */
 ::-webkit-scrollbar {
     width: 10px;
@@ -145,4 +149,17 @@ span.active{
         bottom: 0%;
         transition: .3s;
     }
+}
+/* .custom-img{
+    background: url("../images/fixed2.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    object-fit: contain;
+} */
+.h-v li:hover{
+    color: #fa4529;
+}
+.move{
+    display: red;
 }
