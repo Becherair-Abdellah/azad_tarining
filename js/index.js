@@ -89,17 +89,17 @@ const search = ()=>{
 search();
 
 // selecting elements to make animation
-const sections = document.querySelectorAll('.select');
-window.onscroll = ()=>{
-    sections.forEach((sec)=>{
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 110;
-        let height = sec.offsetHeight;
-        console.log(top);
-        console.log(offset);
-        console.log(height);
-         if(top >= offset && top < offset + height){
-            sec.classList.add('move');
-         }
-    });
-}
+// const sections = document.querySelectorAll('.select');
+// window.onscroll = ()=>{
+//     sections.forEach((sec)=>{
+//         let top = window.scrollY;
+//         let offset = sec.offsetTop - 110;
+//         let height = sec.offsetHeight;
+//         console.log(top);
+//         console.log(offset);
+//         console.log(height);
+//          if(top >= offset && top < offset + height){
+//             sec.classList.add('move');
+//          }
+//     });
+// }
